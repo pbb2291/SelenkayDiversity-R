@@ -1,0 +1,33 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(Cover1p5m_plot, by = Soil_f, k = 5) + s(X25thPerc_plot, 
+    by = Soil_f, k = 5) + s(cv_FHD, by = Soil_f, k = 5) + s(cv_cvpeakh, 
+    by = Soil_f, k = 5) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.42341    0.02025   169.1   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                                    edf Ref.df     F p-value   
+s(Cover1p5m_plot):Soil_fBlack 1.539e+00      4 2.798 0.00114 **
+s(Cover1p5m_plot):Soil_fRed   2.660e-06      4 0.000 0.89335   
+s(X25thPerc_plot):Soil_fBlack 7.535e-01      4 0.764 0.04492 * 
+s(X25thPerc_plot):Soil_fRed   2.403e-06      4 0.000 0.97193   
+s(cv_FHD):Soil_fBlack         1.610e+00      4 1.365 0.03162 * 
+s(cv_FHD):Soil_fRed           2.133e-06      4 0.000 0.89027   
+s(cv_cvpeakh):Soil_fBlack     7.319e-01      4 0.321 0.16974   
+s(cv_cvpeakh):Soil_fRed       2.745e-06      4 0.000 0.67004   
+s(X,Y)                        5.899e-06      4 0.000 0.87923   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.423   Deviance explained = 47.7%
+-REML = -26.413  Scale est. = 0.015148  n = 50
+[1] "AIC = -60.3091708863956"
+[1] "RMSE = 0.115937943603232"

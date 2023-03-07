@@ -1,0 +1,31 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(sd_CD_AboveG, k = 5) + s(sd_herbh, k = 5) + s(sd_PAI_AboveG, 
+    k = 5) + s(VDRpeak_plot, k = 5) + s(cv_CD_AboveG, k = 5) + 
+    s(cv_CD_AboveGgrasslayer, k = 5) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   3.3876     0.0196   172.8   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                                edf Ref.df     F p-value  
+s(sd_CD_AboveG)           1.376e+00      4 1.006  0.0389 *
+s(sd_herbh)               6.713e-01      4 0.511  0.0429 *
+s(sd_PAI_AboveG)          3.889e-05      4 0.000  0.3088  
+s(VDRpeak_plot)           1.138e+00      4 0.507  0.1686  
+s(cv_CD_AboveG)           1.010e-05      4 0.000  0.3978  
+s(cv_CD_AboveGgrasslayer) 3.450e-06      4 0.000  0.7824  
+s(X,Y)                    1.116e-05      4 0.000  0.8990  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.268   Deviance explained = 31.5%
+-REML = -22.353  Scale est. = 0.019217  n = 50
+[1] "AIC = -49.703948857682"
+[1] "RMSE = 0.132696102157714"

@@ -1,0 +1,31 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(mean_stdpeakh, k = 5) + s(Cover0p5m_plot, k = 5) + 
+    s(mean_gapsize, k = 5) + s(sd_ptoh, k = 5) + s(cv_FHD, k = 5) + 
+    s(cv_CD_G, k = 5) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.38761    0.01879   180.3   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                        edf Ref.df     F  p-value    
+s(mean_stdpeakh)  1.153e-05      4 0.000 0.300771    
+s(Cover0p5m_plot) 2.609e+00      4 5.066 0.000182 ***
+s(mean_gapsize)   3.655e-06      4 0.000 0.357304    
+s(sd_ptoh)        1.087e-05      4 0.000 0.559040    
+s(cv_FHD)         1.111e+00      4 0.500 0.164010    
+s(cv_CD_G)        8.660e-06      4 0.000 0.287889    
+s(X,Y)            1.109e-05      4 0.000 0.966416    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.328   Deviance explained = 37.9%
+-REML = -22.911  Scale est. = 0.017648  n = 50
+[1] "AIC = -53.4814521048793"
+[1] "RMSE = 0.126418405424524"

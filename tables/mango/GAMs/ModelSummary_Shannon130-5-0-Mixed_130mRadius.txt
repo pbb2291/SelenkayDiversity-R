@@ -1,0 +1,28 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(sd_gapsize, by = Soil_f) + s(VDRpeak_plot, by = Soil_f) + 
+    s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.42184    0.01653     207   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                                  edf Ref.df     F  p-value    
+s(sd_gapsize):Soil_fBlack   2.579e+00      9 6.730  < 2e-16 ***
+s(sd_gapsize):Soil_fRed     6.971e-06      9 0.000 0.670992    
+s(VDRpeak_plot):Soil_fBlack 1.207e-05      9 0.000 0.654513    
+s(VDRpeak_plot):Soil_fRed   9.274e-01      9 1.418 0.000552 ***
+s(X,Y)                      2.164e-01      4 0.061 0.325189    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.607   Deviance explained = 63.7%
+-REML = -35.616  Scale est. = 0.010325  n = 50
+[1] "AIC = -80.2828344206417"
+[1] "RMSE = 0.0966917445539721"

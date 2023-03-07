@@ -1,0 +1,31 @@
+
+Family: Scaled t(Inf,0.124) 
+Link function: identity 
+
+Formula:
+logrich ~ s(meanH_plot, k = 5) + s(stdH_plot, k = 5) + s(Cover1p5m_plot, 
+    k = 5) + s(horzcover_grass, k = 5) + s(cv_VDRpeak, k = 5) + 
+    s(cv_cvpeakh, k = 5) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73779    0.01749   213.7   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                         edf Ref.df Chi.sq p-value  
+s(meanH_plot)      1.260e+00      4  3.113  0.0183 *
+s(stdH_plot)       1.055e+00      4  2.059  0.0643 .
+s(Cover1p5m_plot)  4.408e-06      4  0.000  0.5023  
+s(horzcover_grass) 1.025e+00      4  2.167  0.0536 .
+s(cv_VDRpeak)      7.670e-01      4  1.258  0.1378  
+s(cv_cvpeakh)      6.855e-05      4  0.000  0.1595  
+s(X,Y)             3.738e-01      4  0.494  0.2021  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.279   Deviance explained = 34.5%
+-REML = -27.046  Scale est. = 1         n = 50
+[1] "AIC = -61.6296326736894"
+[1] "RMSE = 0.116705925533509"
