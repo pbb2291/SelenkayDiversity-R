@@ -1,0 +1,24 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(cv_CD_AboveGgrasslayer) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.38761    0.02156   157.1   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                            edf Ref.df     F p-value  
+s(cv_CD_AboveGgrasslayer) 1.067   1.13 5.371  0.0204 *
+s(X,Y)                    2.000   2.00 0.148  0.8631  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.115   Deviance explained =   17%
+-REML = -13.699  Scale est. = 0.02324   n = 50
+[1] "AIC = -40.3081216654441"
+[1] "RMSE = 0.146116010939045"

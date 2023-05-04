@@ -1,0 +1,22 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(cv_FHD) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.38761    0.02282   148.5   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+            edf Ref.df     F p-value
+s(cv_FHD) 1.111  1.214 0.328   0.562
+s(X,Y)    2.000  2.000 0.648   0.528
+
+R-sq.(adj) =  0.00808   Deviance explained = 7.11%
+-REML = -11.13  Scale est. = 0.026037  n = 50
+[1] "AIC = -34.5855426632973"
+[1] "RMSE = 0.154584635757092"

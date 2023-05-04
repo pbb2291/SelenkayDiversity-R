@@ -1,0 +1,24 @@
+
+Family: Scaled t(Inf,0.127) 
+Link function: identity 
+
+Formula:
+logrich ~ s(stdH_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   3.7378     0.0179   208.8   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+               edf Ref.df Chi.sq p-value  
+s(stdH_plot) 2.337  2.925  6.993  0.0652 .
+s(X,Y)       2.000  2.000  7.324  0.0257 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.244   Deviance explained = 31.1%
+-REML = -21.218  Scale est. = 1         n = 50
+[1] "AIC = -59.4428289493238"
+[1] "RMSE = 0.119652438141269"

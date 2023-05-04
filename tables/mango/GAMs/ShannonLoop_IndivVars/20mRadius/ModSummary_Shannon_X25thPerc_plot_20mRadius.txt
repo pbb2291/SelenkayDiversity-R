@@ -1,0 +1,24 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(X25thPerc_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.38761    0.02178   155.5   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                   edf Ref.df     F p-value  
+s(X25thPerc_plot) 1.47  1.787 2.208  0.0876 .
+s(X,Y)            2.00  2.000 2.517  0.0918 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.0964   Deviance explained =   16%
+-REML = -12.95  Scale est. = 0.023719  n = 50
+[1] "AIC = -38.9220117488165"
+[1] "RMSE = 0.146966231567766"

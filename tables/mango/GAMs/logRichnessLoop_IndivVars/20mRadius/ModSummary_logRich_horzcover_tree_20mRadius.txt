@@ -1,0 +1,24 @@
+
+Family: Scaled t(15.811,0.127) 
+Link function: identity 
+
+Formula:
+logrich ~ s(horzcover_tree) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73979    0.01905   196.3   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                  edf Ref.df Chi.sq p-value   
+s(horzcover_tree)   1      1  0.048 0.82736   
+s(X,Y)              2      2 10.273 0.00588 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.125   Deviance explained = 16.8%
+-REML = -18.907  Scale est. = 1         n = 50
+[1] "AIC = -53.7853158009406"
+[1] "RMSE = 0.229302069816785"

@@ -1,0 +1,22 @@
+
+Family: Scaled t(Inf,0.136) 
+Link function: identity 
+
+Formula:
+logrich ~ s(sd_cvH_vegtype_tree) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.76133    0.02307     163   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                         edf Ref.df Chi.sq p-value
+s(sd_cvH_vegtype_tree) 1.699  2.136  2.242   0.398
+s(X,Y)                 2.000  2.000  1.705   0.426
+
+R-sq.(adj) =  0.0781   Deviance explained = 17.8%
+-REML = -10.448  Scale est. = 1         n = 35
+[1] "AIC = -35.3831158657893"
+[1] "RMSE = 0.12699491168541"

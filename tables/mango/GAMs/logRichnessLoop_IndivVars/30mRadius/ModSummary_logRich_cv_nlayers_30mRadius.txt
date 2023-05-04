@@ -1,0 +1,24 @@
+
+Family: Scaled t(Inf,0.131) 
+Link function: identity 
+
+Formula:
+logrich ~ s(cv_nlayers) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)   3.7378     0.0186     201   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                edf Ref.df Chi.sq p-value  
+s(cv_nlayers) 1.813  2.303  3.471  0.2288  
+s(X,Y)        2.000  2.000  5.607  0.0606 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.185   Deviance explained = 24.8%
+-REML = -19.992  Scale est. = 1         n = 50
+[1] "AIC = -56.1715819816083"
+[1] "RMSE = 0.125006318548386"

@@ -1,0 +1,22 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(ptoh_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.38761    0.02128   159.2   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+               edf Ref.df     F p-value
+s(ptoh_plot) 2.672  3.352 2.182   0.110
+s(X,Y)       2.000  2.000 1.355   0.268
+
+R-sq.(adj) =  0.137   Deviance explained =   22%
+-REML = -12.86  Scale est. = 0.02264   n = 50
+[1] "AIC = -40.1841135991312"
+[1] "RMSE = 0.141675944272802"

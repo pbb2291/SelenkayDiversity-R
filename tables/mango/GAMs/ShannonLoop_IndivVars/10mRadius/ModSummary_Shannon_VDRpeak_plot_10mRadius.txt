@@ -1,0 +1,24 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(VDRpeak_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.38761    0.02184   155.1   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                  edf Ref.df     F p-value  
+s(VDRpeak_plot) 1.498  1.816 2.047  0.0994 .
+s(X,Y)          2.000  2.000 1.411  0.2544  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.091   Deviance explained = 15.6%
+-REML = -12.721  Scale est. = 0.02386   n = 50
+[1] "AIC = -38.6008786395554"
+[1] "RMSE = 0.147355002898098"

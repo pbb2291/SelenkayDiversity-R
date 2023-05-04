@@ -1,0 +1,24 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(gapsize_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)  3.38761    0.02108   160.7   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                edf Ref.df     F p-value   
+s(gapsize_plot)   1      1 8.642 0.00512 **
+s(X,Y)            2      2 1.732 0.18821   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.154   Deviance explained = 20.6%
+-REML = -14.677  Scale est. = 0.022215  n = 50
+[1] "AIC = -42.6244003964466"
+[1] "RMSE = 0.142961092246406"

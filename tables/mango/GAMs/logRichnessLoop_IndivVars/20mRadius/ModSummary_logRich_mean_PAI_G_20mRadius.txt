@@ -1,0 +1,22 @@
+
+Family: Scaled t(57.375,0.131) 
+Link function: identity 
+
+Formula:
+logrich ~ s(mean_PAI_G) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73824    0.01884   198.4   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+              edf Ref.df Chi.sq p-value
+s(mean_PAI_G)   1      1  1.932   0.164
+s(X,Y)          2      2  4.010   0.135
+
+R-sq.(adj) =  0.162   Deviance explained = 20.7%
+-REML = -20.043  Scale est. = 1         n = 50
+[1] "AIC = -55.6232603666104"
+[1] "RMSE = 0.142429014554991"

@@ -1,0 +1,24 @@
+
+Family: Scaled t(19.991,0.129) 
+Link function: identity 
+
+Formula:
+logrich ~ s(horzcover_grass) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73930    0.01912   195.6   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                   edf Ref.df Chi.sq p-value  
+s(horzcover_grass)   1      1  0.023  0.8806  
+s(X,Y)               2      2  6.422  0.0403 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.126   Deviance explained =   17%
+-REML = -19.09  Scale est. = 1         n = 50
+[1] "AIC = -53.7114444745884"
+[1] "RMSE = 0.193799239500761"

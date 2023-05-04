@@ -1,0 +1,22 @@
+
+Family: Scaled t(Inf,0.134) 
+Link function: identity 
+
+Formula:
+logrich ~ s(mean_cvH_tree) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73779    0.01897     197   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                 edf Ref.df Chi.sq p-value
+s(mean_cvH_tree)   1      1  1.459   0.227
+s(X,Y)             2      2  0.815   0.665
+
+R-sq.(adj) =  0.152   Deviance explained = 20.4%
+-REML = -20.112  Scale est. = 1         n = 50
+[1] "AIC = -54.9992744024399"
+[1] "RMSE = 0.12865540828454"

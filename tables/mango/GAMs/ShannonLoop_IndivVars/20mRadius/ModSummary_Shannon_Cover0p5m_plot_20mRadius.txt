@@ -1,0 +1,24 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(Cover0p5m_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   3.3876     0.0206   164.5   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                    edf Ref.df     F p-value  
+s(Cover0p5m_plot) 2.396  3.003 3.603  0.0203 *
+s(X,Y)            2.000  2.000 0.141  0.8687  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.192   Deviance explained = 26.4%
+-REML = -14.631  Scale est. = 0.021211  n = 50
+[1] "AIC = -43.6856571166418"
+[1] "RMSE = 0.137558412308293"

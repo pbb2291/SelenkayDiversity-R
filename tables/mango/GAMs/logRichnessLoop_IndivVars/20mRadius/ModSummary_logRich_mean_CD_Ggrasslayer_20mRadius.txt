@@ -1,0 +1,22 @@
+
+Family: Scaled t(51.96,0.131) 
+Link function: identity 
+
+Formula:
+logrich ~ s(mean_CD_Ggrasslayer) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73832    0.01893   197.5   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                       edf Ref.df Chi.sq p-value
+s(mean_CD_Ggrasslayer)   1      1  1.476   0.224
+s(X,Y)                   2      2  3.451   0.178
+
+R-sq.(adj) =  0.154   Deviance explained =   20%
+-REML = -19.858  Scale est. = 1         n = 50
+[1] "AIC = -55.1463298450692"
+[1] "RMSE = 0.144850782208709"

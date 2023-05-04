@@ -1,0 +1,24 @@
+
+Family: gaussian 
+Link function: identity 
+
+Formula:
+shannonH ~ s(meanpeakh_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   3.3876     0.0219   154.7   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                  edf Ref.df     F p-value  
+s(meanpeakh_plot)   1      1 4.632  0.0367 *
+s(X,Y)              2      2 1.628  0.2074  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.0867   Deviance explained = 14.3%
+-REML = -12.953  Scale est. = 0.023975  n = 50
+[1] "AIC = -38.8133074719791"
+[1] "RMSE = 0.148514585613461"

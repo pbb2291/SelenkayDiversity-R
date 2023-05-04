@@ -138,6 +138,93 @@ ggplot(XY, aes(x = Treatment,
 ggsave(paste0(figd, "/boxplots/Boxplots_Shannon_SplitbySoil.png"),
        width = 6, height = 4, device='png', dpi=300)
 
+# # # ADDED PLOTS NOT SPLIT BY SOIL
+
+ggplot(XY, aes(x = Treatment,
+               y = Richness,
+               fill=Treatment)) +
+  geom_boxplot() + 
+  scale_fill_manual(values = c("#FFC20A", "#0C7BDC")) +  
+  theme(axis.text.y = element_text(colour = "black", size = 11), 
+        axis.text.x = element_text(colour = "black", size = 11),
+        strip.text.x = element_text(colour = c("black", "red"),
+                                    face = "bold", 
+                                    size = 11),
+        legend.text = element_text(size = 12, face = "bold", 
+                                   colour ="black"), 
+        legend.position = "right", axis.title.y = element_text(face = "bold",
+                                                               size = 12), 
+        axis.title.x = element_text(face = "bold", size = 14, colour = "black"), 
+        legend.title = element_text(size = 14, colour = "black", face = "bold"))
+
+ggsave(paste0(figd, "/boxplots/Boxplots_Richness_AllSoils.png"),
+       width = 6, height = 4, device='png', dpi=300)
+
+# Quick anova
+formula = as.formula(paste0('Richness', '~ Treatment_f'))
+aov_res <- aov(formula,
+               data = XY)
+aov_tbl = broom::tidy(aov_res)
+aov_tbl
+
+#
+
+ggplot(XY, aes(x = Treatment,
+               y = shannonH,
+               fill=Treatment)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("#FFC20A", "#0C7BDC")) +  
+  theme(axis.text.y = element_text(colour = "black", size = 11), 
+        axis.text.x = element_text(colour = "black", size = 11),
+        strip.text.x = element_text(colour = c("black", "red"),
+                                    face = "bold", 
+                                    size = 11),
+        legend.text = element_text(size = 12, face = "bold", 
+                                   colour ="black"), 
+        legend.position = "right", axis.title.y = element_text(face = "bold",
+                                                               size = 12), 
+        axis.title.x = element_text(face = "bold", size = 14, colour = "black"), 
+        legend.title = element_text(size = 14, colour = "black", face = "bold"))
+
+ggsave(paste0(figd, "/boxplots/Boxplots_Shannon_AllSoils.png"),
+       width = 6, height = 4, device='png', dpi=300)
+
+
+# Quick anova
+formula = as.formula(paste0('shannonH', '~ Treatment_f'))
+aov_res <- aov(formula,
+               data = XY)
+aov_tbl = broom::tidy(aov_res)
+aov_tbl
+
+# 
+ggplot(XY, aes(x = Treatment,
+               y = Abundance,
+               fill=Treatment)) +
+  geom_boxplot() +
+  scale_fill_manual(values = c("#FFC20A", "#0C7BDC")) +  
+  theme(axis.text.y = element_text(colour = "black", size = 11), 
+        axis.text.x = element_text(colour = "black", size = 11),
+        strip.text.x = element_text(colour = c("black", "red"),
+                                    face = "bold", 
+                                    size = 11),
+        legend.text = element_text(size = 12, face = "bold", 
+                                   colour ="black"), 
+        legend.position = "right", axis.title.y = element_text(face = "bold",
+                                                               size = 12), 
+        axis.title.x = element_text(face = "bold", size = 14, colour = "black"), 
+        legend.title = element_text(size = 14, colour = "black", face = "bold"))
+
+ggsave(paste0(figd, "/boxplots/Boxplots_Abundance_AllSoils.png"),
+       width = 6, height = 4, device='png', dpi=300)
+
+
+# Quick anova
+formula = as.formula(paste0('Abundance', '~ Treatment_f'))
+aov_res <- aov(formula,
+               data = XY)
+aov_tbl = broom::tidy(aov_res)
+aov_tbl
 # # # Now, also make boxplots of some environmental vars
 
 # These are the top correlated variables with shannonH

@@ -1,0 +1,22 @@
+
+Family: Scaled t(Inf,0.127) 
+Link function: identity 
+
+Formula:
+logrich ~ s(cv_cvpeakh) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73779    0.01803   207.3   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                edf Ref.df Chi.sq p-value
+s(cv_cvpeakh) 3.147  3.919  6.014   0.165
+s(X,Y)        2.000  2.000  3.438   0.179
+
+R-sq.(adj) =  0.234   Deviance explained = 31.4%
+-REML = -19.686  Scale est. = 1         n = 50
+[1] "AIC = -57.9270582683233"
+[1] "RMSE = 0.119400183968496"

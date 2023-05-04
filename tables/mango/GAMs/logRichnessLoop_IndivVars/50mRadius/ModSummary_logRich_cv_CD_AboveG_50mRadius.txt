@@ -1,0 +1,24 @@
+
+Family: Scaled t(Inf,0.13) 
+Link function: identity 
+
+Formula:
+logrich ~ s(cv_CD_AboveG) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73779    0.01835   203.7   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                  edf Ref.df Chi.sq p-value  
+s(cv_CD_AboveG) 2.603  3.238  4.392  0.2294  
+s(X,Y)          2.000  2.000  5.197  0.0744 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.206   Deviance explained = 28.1%
+-REML = -19.69  Scale est. = 1         n = 50
+[1] "AIC = -56.7198059048834"
+[1] "RMSE = 0.122261780123951"

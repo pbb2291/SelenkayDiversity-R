@@ -1,0 +1,24 @@
+
+Family: Scaled t(Inf,0.131) 
+Link function: identity 
+
+Formula:
+logrich ~ s(VDRpeak_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73779    0.01854   201.7   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                  edf Ref.df Chi.sq p-value   
+s(VDRpeak_plot) 1.234  1.425  2.839 0.10416   
+s(X,Y)          2.000  2.000 10.478 0.00531 **
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =   0.19   Deviance explained = 24.4%
+-REML = -20.46  Scale est. = 1         n = 50
+[1] "AIC = -57.0758599538447"
+[1] "RMSE = 0.125452446845334"

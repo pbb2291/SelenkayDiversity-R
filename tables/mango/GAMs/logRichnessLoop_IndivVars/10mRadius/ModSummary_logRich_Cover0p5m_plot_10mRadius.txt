@@ -1,0 +1,24 @@
+
+Family: Scaled t(22.261,0.128) 
+Link function: identity 
+
+Formula:
+logrich ~ s(Cover0p5m_plot) + s(X, Y, k = 5)
+
+Parametric coefficients:
+            Estimate Std. Error z value Pr(>|z|)    
+(Intercept)  3.73948    0.01889     198   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Approximate significance of smooth terms:
+                    edf Ref.df Chi.sq p-value  
+s(Cover0p5m_plot) 1.607  1.985  1.170  0.5431  
+s(X,Y)            2.000  2.000  7.996  0.0184 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+R-sq.(adj) =  0.149   Deviance explained = 20.1%
+-REML = -19.096  Scale est. = 1         n = 50
+[1] "AIC = -54.4366155579854"
+[1] "RMSE = 0.178756540012237"
